@@ -1,0 +1,36 @@
+{
+  "name": "mcrobbinfo",
+  "version": "0.0.1",
+  "description": "McRobb.info page.",
+  "main": "gulpfile.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=7.0",
+    "npm": ">=4.0"
+  },
+  "keywords": [
+    "andrew",
+    "mcrobb"
+  ],
+  "author": "Andrew Mcrobb",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-express": "^0.3.5",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "highland": "^2.11.1",
+    "node-sass": "^4.5.3",
+    "spectre.css": "^0.5.0"
+  },
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}

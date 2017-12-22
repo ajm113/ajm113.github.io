@@ -1,0 +1,78 @@
+mixin techIcon(img, name)
+    img(src=img alt=name class="tech-logo")
+
+mixin companyLogo(img, name)
+    img(src=img alt=name class="img-responsive company-logo")
+
+doctype html
+html(lang="en")
+    include includes/head.pug
+    body
+        include includes/header.pug
+
+        .container.grid-lg
+          h1 Client History
+          .timeline
+            .timeline-item
+              .timeline-left
+                a(class="timeline-icon icon-lg" href="#")
+                  i(class="icon icon-check")
+              .timeline-content
+                h2 2016-2017
+                +companyLogo("/img/clients/asu.png")
+                +companyLogo("/img/clients/nextbee.png")
+                h2 Payroll Management LLC.
+            .timeline-item
+              .timeline-left
+                a(class="timeline-icon icon-lg" href="#")
+                  i(class="icon icon-check")
+              .timeline-content
+                h2 2015-2016
+                h2 Payroll Management LLC.
+                +companyLogo("/img/clients/noraxon.svg")
+                +companyLogo("/img/clients/uat.png")
+                +companyLogo("/img/clients/atsu.jpg")
+                +companyLogo("/img/clients/fabcom.svg")
+            .timeline-item
+              .timeline-left
+                a(class="timeline-icon icon-lg" href="#")
+                  i(class="icon icon-check")
+              .timeline-content
+                h2 2014-2015
+                h4 Entertainment Events AZ - (Out of Business)
+                h4 Stepfy - (Out of Business)
+          h1 Languages and Tech
+          +techIcon("/img/tech/html5.png", "HTML5")
+          +techIcon("/img/tech/css3.png", "CSS3")
+          +techIcon("/img/tech/bootstrap.png", "Bootstrap")
+          +techIcon("/img/tech/foundation.png", "Foundation")
+          +techIcon("/img/tech/php.png", "PHP")
+          +techIcon("/img/tech/laravel.png", "Laravel")
+          +techIcon("/img/tech/codeigniter.png", "Codeigniter")
+          +techIcon("/img/tech/mysql.png", "MySQL")
+          +techIcon("/img/tech/maraidb.png", "MariaDB")
+          +techIcon("/img/tech/erlang.png", "Erlang")
+          +techIcon("/img/tech/golang.png", "GoLang")
+          +techIcon("/img/tech/preact.png", "Preact")
+          +techIcon("/img/tech/nodejs.png", "Node.js")
+          +techIcon("/img/tech/git.png", "Git")
+          +techIcon("/img/tech/subversion.png", "Subversion")
+          +techIcon("/img/tech/debian.png", "Debian")
+          +techIcon("/img/tech/docker.png", "Docker")
+          +techIcon("/img/tech/aws.png", "Amazon AWS")
+          +techIcon("/img/tech/jquery.png", "jQuery")
+          +techIcon("/img/tech/babel.svg", "Babel")
+
+          h1 F.A.Q
+          h2 Are you currently employeed?
+          p Yes. Can't say who at the moment for personal policy reasons at this time.
+          h2 Are you currently looking for freelance work?
+          p Yes, part-time at the moment! Contact me via email anytime! andrewmcrobb@gmail.com
+          h2 Do you use/know WordPress?
+          p Yes, however, I choose not to use it or work with it due to its nature of being targeted for attacks for its security vulnerabilities. -- Unless it's only used for ... blogging, then it doesn't matter.
+          h2 What's the best way to contact you?
+          p Perferably by phone (if given to you) or email at andrewmcrobb@gmail.com
+          h2 Are you comfurtable using Windows/OS X?
+          p Yes, I've grown up using Windows, and have been using OS X for a few years. My primary home/workstation is Linux Mint 18.3.
+          h2 What do you do on your free time?
+          p Currently, I'm working on a server farm for kicks.
