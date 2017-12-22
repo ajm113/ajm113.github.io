@@ -71,15 +71,13 @@ gulp.task('img', function buildHTML() {
 gulp.task('server', function() {
     server.run(['serve.js']);
 
-    gulp.watch(config.scss.input, 'scss');
-    gulp.watch(config.pug.input, 'pug');
-    gulp.watch(config.img.input, 'img');
+    gulp.watch('./docs/**/*', server.notify);
 });
 
 gulp.task('watch', ()=> {
-    gulp.watch(config.scss.input, 'scss');
-    gulp.watch(config.pug.input, 'pug');
-    gulp.watch(config.img.input, 'img');
+    gulp.watch(config.scss.input, ['scss']);
+    gulp.watch(config.pug.input, ['pug']);
+    gulp.watch(config.img.input, ['img']);
 });
 
 
@@ -88,5 +86,5 @@ gulp.task('default', () => {
 });
 
 gulp.task('dev', () => {
-    gulp.start('default', 'server');
+    gulp.start('default', 'watch', 'server');
 });
